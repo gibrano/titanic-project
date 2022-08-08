@@ -41,7 +41,7 @@ Here you can see the model versioning and the performance of each one.
 
 # Test the endpoint:
 
-curl -X POST -H "Content-Type:application/json; format=pandas-split" --data '{"columns":["Age","SibSp","Parch","Fare","C","Q","S","female","male","Class_1","Class_2","Class_3"],"index":[1,2], "data":[[22.0,1,0,66.6,0,0,1,1,0,1,0,0],[30.0,0,1,40,0,0,1,1,0,1,0,0]]}' http://0.0.0.0:5001/invocations
+curl -X POST -H "Content-Type:application/json; format=pandas-split" --data '{"columns":["Age","FamilySize","Fare","C","Q","S","female","male","Class_1","Class_2","Class_3", "Title_Mr", "Title_Mrs", "Title_Miss","Title_Other", "Title_Master"],"index":[1,2], "data":[[22.0,1,66.6,0,0,1,1,0,1,0,0,1,0,0,0,0],[30.0,1,40.0,0,0,1,1,0,1,0,0,1,0,0,0,0]]}' http://0.0.0.0:5001/invocations
 
 # Monitor CPU and Memory with Grafana:
 

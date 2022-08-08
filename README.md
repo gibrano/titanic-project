@@ -1,4 +1,9 @@
-# titanic-project
+# Titanic Project
+
+This project consists of three parts:
+
+- The execution of an automated pipeline with Airflow and MlFlow.
+- And an API in charge of making the predictions.
 
 # Build the mlflow docker container
 

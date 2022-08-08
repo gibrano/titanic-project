@@ -1,5 +1,6 @@
 
 import pandas as pd
+import numpy as np
 import logging
 import boto3
 import os
@@ -11,21 +12,52 @@ def load_data(**kwargs):
     return df_train.to_json(orient='split')
 
 def create_training_dataset(**kwargs):
+
+    titles_dict = {'Capt': 'Other',
+               'Major': 'Other',
+               'Jonkheer': 'Other',
+               'Don': 'Other',
+               'Sir': 'Other',
+               'Dr': 'Other',
+               'Rev': 'Other',
+               'Countess': 'Other',
+               'Dona': 'Other',
+               'Mme': 'Mrs',
+               'Mlle': 'Miss',
+               'Ms': 'Miss',
+               'Mr': 'Mr',
+               'Mrs': 'Mrs',
+               'Miss': 'Miss',
+               'Master': 'Master',
+               'Lady': 'Other'}
+
     ti = kwargs['ti']
     json_obj = ti.xcom_pull(task_ids='load_table')
 
     df = pd.read_json(json_obj, orient='split')
 
+    df['Title'] = df.Name.str.extract('([A-Za-z]+)\.', expand=False)
+    df['Title'] = df['Title'].map(titles_dict)
+    df.Title.fillna('Mr', inplace=True)
+
+    means = df.groupby('Title')['Age'].mean().to_dict()
+
+    df.loc[df.Age.isna(),'Age'] = df['Title'].loc[df.Age.isna()].map(means)
+
     df = df.drop(['Name','Ticket', 'Cabin'], axis=1)
-    df.Age = df.Age.fillna(df.Age.median())
     df.Embarked = df.Embarked.fillna('S')
+
+    df['FamilySize'] = df['SibSp'] + df['Parch']
+    df.drop('SibSp',axis=1,inplace=True)
+    df.drop('Parch',axis=1,inplace=True)
 
     embark_dummies_titanic  = pd.get_dummies(df['Embarked'])
     sex_dummies_titanic  = pd.get_dummies(df['Sex'])
     pclass_dummies_titanic  = pd.get_dummies(df['Pclass'], prefix="Class")
+    title_dummies_titanic  = pd.get_dummies(df['Title'], prefix="Title")
 
-    df = df.drop(['Embarked', 'Sex', 'Pclass'], axis=1)
-    df = df.join([embark_dummies_titanic, sex_dummies_titanic, pclass_dummies_titanic])
+    df = df.drop(['Embarked', 'Sex', 'Pclass', 'Title'], axis=1)
+    df = df.join([embark_dummies_titanic, sex_dummies_titanic, pclass_dummies_titanic, title_dummies_titanic])
 
     return df.to_json(orient='split')
 

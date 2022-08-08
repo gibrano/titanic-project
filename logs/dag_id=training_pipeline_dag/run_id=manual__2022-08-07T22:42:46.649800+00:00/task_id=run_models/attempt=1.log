@@ -1,0 +1,43 @@
+[2022-08-07 22:42:54,007] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: training_pipeline_dag.run_models manual__2022-08-07T22:42:46.649800+00:00 [queued]>
+[2022-08-07 22:42:54,022] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: training_pipeline_dag.run_models manual__2022-08-07T22:42:46.649800+00:00 [queued]>
+[2022-08-07 22:42:54,022] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-07 22:42:54,022] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-07 22:42:54,022] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-07 22:42:54,039] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): run_models> on 2022-08-07 22:42:46.649800+00:00
+[2022-08-07 22:42:54,046] {standard_task_runner.py:52} INFO - Started process 169 to run task
+[2022-08-07 22:42:54,049] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'training_pipeline_dag', 'run_models', 'manual__2022-08-07T22:42:46.649800+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpmdhvn_1w', '--error-file', '/tmp/tmppvn7mw5r']
+[2022-08-07 22:42:54,050] {standard_task_runner.py:80} INFO - Job 5: Subtask run_models
+[2022-08-07 22:42:54,105] {task_command.py:371} INFO - Running <TaskInstance: training_pipeline_dag.run_models manual__2022-08-07T22:42:46.649800+00:00 [running]> on host 4deed35699de
+[2022-08-07 22:42:54,183] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Gibran Otazo
+AIRFLOW_CTX_DAG_ID=training_pipeline_dag
+AIRFLOW_CTX_TASK_ID=run_models
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-07T22:42:46.649800+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-07T22:42:46.649800+00:00
+[2022-08-07 22:42:54,210] {train.py:44} INFO - train_shape: 712 , validation_shape: 179
+[2022-08-07 22:42:54,266] {logging_mixin.py:115} WARNING - 2022/08/07 22:42:54 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh()
+
+All git commands will error until this is rectified.
+
+This initial warning can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|none|n|0: for no warning or exception
+    - warn|w|warning|1: for a printed warning
+    - error|e|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2022-08-07 22:42:54,302] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/sklearn/svm/_base.py:1208: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  ConvergenceWarning,
+
+[2022-08-07 22:43:02,416] {python.py:173} INFO - Done. Returned value was: None
+[2022-08-07 22:43:02,434] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=training_pipeline_dag, task_id=run_models, execution_date=20220807T224246, start_date=20220807T224254, end_date=20220807T224302
+[2022-08-07 22:43:02,493] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-07 22:43:02,525] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

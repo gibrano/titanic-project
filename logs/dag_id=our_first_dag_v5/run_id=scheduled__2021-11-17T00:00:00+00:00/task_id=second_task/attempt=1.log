@@ -1,0 +1,168 @@
+[2022-08-06 19:37:08,292] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 19:37:08,308] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 19:37:08,308] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 19:37:08,308] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 19:37:08,308] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 19:37:08,332] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): second_task> on 2021-11-17 00:00:00+00:00
+[2022-08-06 19:37:08,339] {standard_task_runner.py:52} INFO - Started process 1143 to run task
+[2022-08-06 19:37:08,342] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'second_task', 'scheduled__2021-11-17T00:00:00+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpc410_jj8', '--error-file', '/tmp/tmpwlftakxd']
+[2022-08-06 19:37:08,342] {standard_task_runner.py:80} INFO - Job 335: Subtask second_task
+[2022-08-06 19:37:08,420] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [running]> on host b29c168c1666
+[2022-08-06 19:37:08,520] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=second_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-17T00:00:00+00:00
+[2022-08-06 19:37:08,521] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 19:37:08,522] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task2 and will be running after task1!']
+[2022-08-06 19:37:08,535] {subprocess.py:85} INFO - Output:
+[2022-08-06 19:37:08,537] {subprocess.py:92} INFO - hey, I am task2 and will be running after task1!
+[2022-08-06 19:37:08,537] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 19:37:08,573] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=second_task, execution_date=20211117T000000, start_date=20220806T193708, end_date=20220806T193708
+[2022-08-06 19:37:08,593] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 19:37:08,634] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 21:51:02,401] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 21:51:02,418] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 21:51:02,418] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:51:02,418] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 21:51:02,419] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:51:02,434] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): second_task> on 2021-11-17 00:00:00+00:00
+[2022-08-06 21:51:02,443] {standard_task_runner.py:52} INFO - Started process 1334 to run task
+[2022-08-06 21:51:02,446] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'second_task', 'scheduled__2021-11-17T00:00:00+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpywxvqynt', '--error-file', '/tmp/tmpeczs9y6w']
+[2022-08-06 21:51:02,446] {standard_task_runner.py:80} INFO - Job 335: Subtask second_task
+[2022-08-06 21:51:02,562] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [running]> on host c3f731879890
+[2022-08-06 21:51:02,700] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=second_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-17T00:00:00+00:00
+[2022-08-06 21:51:02,701] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 21:51:02,702] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task2 and will be running after task1!']
+[2022-08-06 21:51:02,720] {subprocess.py:85} INFO - Output:
+[2022-08-06 21:51:02,722] {subprocess.py:92} INFO - hey, I am task2 and will be running after task1!
+[2022-08-06 21:51:02,723] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 21:51:02,772] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=second_task, execution_date=20211117T000000, start_date=20220806T215102, end_date=20220806T215102
+[2022-08-06 21:51:02,818] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 21:51:02,855] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 21:56:27,405] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 21:56:27,420] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 21:56:27,420] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:56:27,420] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 21:56:27,421] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:56:27,443] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): second_task> on 2021-11-17 00:00:00+00:00
+[2022-08-06 21:56:27,451] {standard_task_runner.py:52} INFO - Started process 1127 to run task
+[2022-08-06 21:56:27,454] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'second_task', 'scheduled__2021-11-17T00:00:00+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpw7x2a8pl', '--error-file', '/tmp/tmpcpcz03hq']
+[2022-08-06 21:56:27,455] {standard_task_runner.py:80} INFO - Job 335: Subtask second_task
+[2022-08-06 21:56:27,541] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [running]> on host bc7e154a4fdd
+[2022-08-06 21:56:27,646] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=second_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-17T00:00:00+00:00
+[2022-08-06 21:56:27,647] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 21:56:27,648] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task2 and will be running after task1!']
+[2022-08-06 21:56:27,662] {subprocess.py:85} INFO - Output:
+[2022-08-06 21:56:27,664] {subprocess.py:92} INFO - hey, I am task2 and will be running after task1!
+[2022-08-06 21:56:27,665] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 21:56:27,704] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=second_task, execution_date=20211117T000000, start_date=20220806T215627, end_date=20220806T215627
+[2022-08-06 21:56:27,747] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 21:56:27,786] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 22:11:32,078] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 22:11:32,096] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 22:11:32,096] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:11:32,096] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 22:11:32,096] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:11:32,116] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): second_task> on 2021-11-17 00:00:00+00:00
+[2022-08-06 22:11:32,125] {standard_task_runner.py:52} INFO - Started process 1148 to run task
+[2022-08-06 22:11:32,129] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'second_task', 'scheduled__2021-11-17T00:00:00+00:00', '--job-id', '337', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpf9lfsr5k', '--error-file', '/tmp/tmp2g06bpp5']
+[2022-08-06 22:11:32,129] {standard_task_runner.py:80} INFO - Job 337: Subtask second_task
+[2022-08-06 22:11:32,212] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [running]> on host 1250c3b659cd
+[2022-08-06 22:11:32,307] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=second_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-17T00:00:00+00:00
+[2022-08-06 22:11:32,308] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 22:11:32,309] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task2 and will be running after task1!']
+[2022-08-06 22:11:32,323] {subprocess.py:85} INFO - Output:
+[2022-08-06 22:11:32,324] {subprocess.py:92} INFO - hey, I am task2 and will be running after task1!
+[2022-08-06 22:11:32,324] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 22:11:32,358] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=second_task, execution_date=20211117T000000, start_date=20220806T221132, end_date=20220806T221132
+[2022-08-06 22:11:32,380] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 22:11:32,433] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 22:19:12,208] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 22:19:12,222] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 22:19:12,222] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:19:12,222] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 22:19:12,222] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:19:12,236] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): second_task> on 2021-11-17 00:00:00+00:00
+[2022-08-06 22:19:12,241] {standard_task_runner.py:52} INFO - Started process 1140 to run task
+[2022-08-06 22:19:12,243] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'second_task', 'scheduled__2021-11-17T00:00:00+00:00', '--job-id', '335', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpqx1vnv49', '--error-file', '/tmp/tmpqbjiz1lf']
+[2022-08-06 22:19:12,244] {standard_task_runner.py:80} INFO - Job 335: Subtask second_task
+[2022-08-06 22:19:12,294] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [running]> on host ed53bde1c44a
+[2022-08-06 22:19:12,367] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=second_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-17T00:00:00+00:00
+[2022-08-06 22:19:12,367] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 22:19:12,368] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task2 and will be running after task1!']
+[2022-08-06 22:19:12,379] {subprocess.py:85} INFO - Output:
+[2022-08-06 22:19:12,381] {subprocess.py:92} INFO - hey, I am task2 and will be running after task1!
+[2022-08-06 22:19:12,381] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 22:19:12,405] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=second_task, execution_date=20211117T000000, start_date=20220806T221912, end_date=20220806T221912
+[2022-08-06 22:19:12,455] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 22:19:12,481] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 22:22:51,900] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 22:22:51,915] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [queued]>
+[2022-08-06 22:22:51,916] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:22:51,916] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 22:22:51,916] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:22:51,937] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): second_task> on 2021-11-17 00:00:00+00:00
+[2022-08-06 22:22:51,945] {standard_task_runner.py:52} INFO - Started process 1180 to run task
+[2022-08-06 22:22:51,948] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'second_task', 'scheduled__2021-11-17T00:00:00+00:00', '--job-id', '334', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmprj46dlpn', '--error-file', '/tmp/tmp4t13p8mp']
+[2022-08-06 22:22:51,949] {standard_task_runner.py:80} INFO - Job 334: Subtask second_task
+[2022-08-06 22:22:52,046] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.second_task scheduled__2021-11-17T00:00:00+00:00 [running]> on host b215076695c3
+[2022-08-06 22:22:52,156] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=second_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-11-17T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-11-17T00:00:00+00:00
+[2022-08-06 22:22:52,157] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 22:22:52,158] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task2 and will be running after task1!']
+[2022-08-06 22:22:52,174] {subprocess.py:85} INFO - Output:
+[2022-08-06 22:22:52,175] {subprocess.py:92} INFO - hey, I am task2 and will be running after task1!
+[2022-08-06 22:22:52,176] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 22:22:52,216] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=second_task, execution_date=20211117T000000, start_date=20220806T222251, end_date=20220806T222252
+[2022-08-06 22:22:52,281] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 22:22:52,342] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,168 @@
+[2022-08-06 19:36:21,565] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 19:36:21,580] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 19:36:21,580] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 19:36:21,580] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 19:36:21,581] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 19:36:21,602] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): thrid_task> on 2021-09-05 00:00:00+00:00
+[2022-08-06 19:36:21,609] {standard_task_runner.py:52} INFO - Started process 450 to run task
+[2022-08-06 19:36:21,612] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'thrid_task', 'scheduled__2021-09-05T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp55q6gwve', '--error-file', '/tmp/tmplocnw6ir']
+[2022-08-06 19:36:21,612] {standard_task_runner.py:80} INFO - Job 117: Subtask thrid_task
+[2022-08-06 19:36:21,688] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [running]> on host b29c168c1666
+[2022-08-06 19:36:21,768] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=thrid_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-09-05T00:00:00+00:00
+[2022-08-06 19:36:21,770] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 19:36:21,770] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task3 and will be running after task1 at the same time as task2!']
+[2022-08-06 19:36:21,781] {subprocess.py:85} INFO - Output:
+[2022-08-06 19:36:21,783] {subprocess.py:92} INFO - hey, I am task3 and will be running after task1 at the same time as task2!
+[2022-08-06 19:36:21,783] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 19:36:21,811] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=thrid_task, execution_date=20210905T000000, start_date=20220806T193621, end_date=20220806T193621
+[2022-08-06 19:36:21,863] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 19:36:21,898] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 21:50:16,431] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 21:50:16,446] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 21:50:16,446] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:50:16,446] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 21:50:16,446] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:50:16,462] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): thrid_task> on 2021-09-05 00:00:00+00:00
+[2022-08-06 21:50:16,468] {standard_task_runner.py:52} INFO - Started process 640 to run task
+[2022-08-06 21:50:16,474] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'thrid_task', 'scheduled__2021-09-05T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpek6jl38t', '--error-file', '/tmp/tmphmvnzmgc']
+[2022-08-06 21:50:16,474] {standard_task_runner.py:80} INFO - Job 117: Subtask thrid_task
+[2022-08-06 21:50:16,583] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [running]> on host c3f731879890
+[2022-08-06 21:50:16,714] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=thrid_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-09-05T00:00:00+00:00
+[2022-08-06 21:50:16,715] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 21:50:16,715] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task3 and will be running after task1 at the same time as task2!']
+[2022-08-06 21:50:16,732] {subprocess.py:85} INFO - Output:
+[2022-08-06 21:50:16,734] {subprocess.py:92} INFO - hey, I am task3 and will be running after task1 at the same time as task2!
+[2022-08-06 21:50:16,735] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 21:50:16,773] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=thrid_task, execution_date=20210905T000000, start_date=20220806T215016, end_date=20220806T215016
+[2022-08-06 21:50:16,808] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 21:50:16,913] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 21:55:46,984] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 21:55:47,004] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 21:55:47,004] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:55:47,004] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 21:55:47,004] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 21:55:47,025] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): thrid_task> on 2021-09-05 00:00:00+00:00
+[2022-08-06 21:55:47,032] {standard_task_runner.py:52} INFO - Started process 450 to run task
+[2022-08-06 21:55:47,035] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'thrid_task', 'scheduled__2021-09-05T00:00:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp8czsf9wg', '--error-file', '/tmp/tmp0gwbldn7']
+[2022-08-06 21:55:47,036] {standard_task_runner.py:80} INFO - Job 119: Subtask thrid_task
+[2022-08-06 21:55:47,108] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [running]> on host bc7e154a4fdd
+[2022-08-06 21:55:47,194] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=thrid_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-09-05T00:00:00+00:00
+[2022-08-06 21:55:47,195] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 21:55:47,195] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task3 and will be running after task1 at the same time as task2!']
+[2022-08-06 21:55:47,209] {subprocess.py:85} INFO - Output:
+[2022-08-06 21:55:47,212] {subprocess.py:92} INFO - hey, I am task3 and will be running after task1 at the same time as task2!
+[2022-08-06 21:55:47,212] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 21:55:47,252] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=thrid_task, execution_date=20210905T000000, start_date=20220806T215546, end_date=20220806T215547
+[2022-08-06 21:55:47,287] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 21:55:47,326] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 22:10:45,821] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 22:10:45,835] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 22:10:45,835] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:10:45,835] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 22:10:45,835] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:10:45,852] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): thrid_task> on 2021-09-05 00:00:00+00:00
+[2022-08-06 22:10:45,858] {standard_task_runner.py:52} INFO - Started process 444 to run task
+[2022-08-06 22:10:45,861] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'thrid_task', 'scheduled__2021-09-05T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpdpp3l6ar', '--error-file', '/tmp/tmpbwi3jk0x']
+[2022-08-06 22:10:45,862] {standard_task_runner.py:80} INFO - Job 117: Subtask thrid_task
+[2022-08-06 22:10:45,928] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [running]> on host 1250c3b659cd
+[2022-08-06 22:10:46,002] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=thrid_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-09-05T00:00:00+00:00
+[2022-08-06 22:10:46,002] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 22:10:46,003] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task3 and will be running after task1 at the same time as task2!']
+[2022-08-06 22:10:46,015] {subprocess.py:85} INFO - Output:
+[2022-08-06 22:10:46,017] {subprocess.py:92} INFO - hey, I am task3 and will be running after task1 at the same time as task2!
+[2022-08-06 22:10:46,017] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 22:10:46,043] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=thrid_task, execution_date=20210905T000000, start_date=20220806T221045, end_date=20220806T221046
+[2022-08-06 22:10:46,072] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 22:10:46,103] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 22:18:33,360] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 22:18:33,372] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 22:18:33,372] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:18:33,372] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 22:18:33,372] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:18:33,388] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): thrid_task> on 2021-09-05 00:00:00+00:00
+[2022-08-06 22:18:33,395] {standard_task_runner.py:52} INFO - Started process 462 to run task
+[2022-08-06 22:18:33,398] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'thrid_task', 'scheduled__2021-09-05T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpkv4ydpli', '--error-file', '/tmp/tmp6lmh62k9']
+[2022-08-06 22:18:33,399] {standard_task_runner.py:80} INFO - Job 117: Subtask thrid_task
+[2022-08-06 22:18:33,464] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [running]> on host ed53bde1c44a
+[2022-08-06 22:18:33,544] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=thrid_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-09-05T00:00:00+00:00
+[2022-08-06 22:18:33,545] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 22:18:33,546] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task3 and will be running after task1 at the same time as task2!']
+[2022-08-06 22:18:33,559] {subprocess.py:85} INFO - Output:
+[2022-08-06 22:18:33,560] {subprocess.py:92} INFO - hey, I am task3 and will be running after task1 at the same time as task2!
+[2022-08-06 22:18:33,560] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 22:18:33,587] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=thrid_task, execution_date=20210905T000000, start_date=20220806T221833, end_date=20220806T221833
+[2022-08-06 22:18:33,609] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 22:18:33,635] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-08-06 22:22:07,481] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 22:22:07,497] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [queued]>
+[2022-08-06 22:22:07,497] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:22:07,497] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2022-08-06 22:22:07,497] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-06 22:22:07,514] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): thrid_task> on 2021-09-05 00:00:00+00:00
+[2022-08-06 22:22:07,521] {standard_task_runner.py:52} INFO - Started process 497 to run task
+[2022-08-06 22:22:07,523] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'our_first_dag_v5', 'thrid_task', 'scheduled__2021-09-05T00:00:00+00:00', '--job-id', '117', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpm2j9drwe', '--error-file', '/tmp/tmp8zguezql']
+[2022-08-06 22:22:07,524] {standard_task_runner.py:80} INFO - Job 117: Subtask thrid_task
+[2022-08-06 22:22:07,591] {task_command.py:371} INFO - Running <TaskInstance: our_first_dag_v5.thrid_task scheduled__2021-09-05T00:00:00+00:00 [running]> on host b215076695c3
+[2022-08-06 22:22:07,699] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=coder2j
+AIRFLOW_CTX_DAG_ID=our_first_dag_v5
+AIRFLOW_CTX_TASK_ID=thrid_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-05T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-09-05T00:00:00+00:00
+[2022-08-06 22:22:07,700] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-08-06 22:22:07,701] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo hey, I am task3 and will be running after task1 at the same time as task2!']
+[2022-08-06 22:22:07,714] {subprocess.py:85} INFO - Output:
+[2022-08-06 22:22:07,715] {subprocess.py:92} INFO - hey, I am task3 and will be running after task1 at the same time as task2!
+[2022-08-06 22:22:07,716] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-08-06 22:22:07,749] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=our_first_dag_v5, task_id=thrid_task, execution_date=20210905T000000, start_date=20220806T222207, end_date=20220806T222207
+[2022-08-06 22:22:07,775] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-06 22:22:07,807] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

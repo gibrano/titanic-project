@@ -15066,3 +15066,122 @@ ModuleNotFoundError: No module named 'training'
 [2022-08-08 17:34:42,491] {logging_mixin.py:115} INFO - [2022-08-08 17:34:42,490] {dag.py:2420} INFO - Sync 1 DAGs
 [2022-08-08 17:34:42,507] {logging_mixin.py:115} INFO - [2022-08-08 17:34:42,507] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
 [2022-08-08 17:34:42,515] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.987 seconds
+[2022-08-08 17:35:12,611] {processor.py:153} INFO - Started process (PID=322) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:35:12,615] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:35:12,615] {logging_mixin.py:115} INFO - [2022-08-08 17:35:12,615] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:35:13,526] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:35:13,541] {logging_mixin.py:115} INFO - [2022-08-08 17:35:13,541] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:35:13,557] {logging_mixin.py:115} INFO - [2022-08-08 17:35:13,557] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:35:13,564] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.956 seconds
+[2022-08-08 17:35:43,655] {processor.py:153} INFO - Started process (PID=351) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:35:43,663] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:35:43,664] {logging_mixin.py:115} INFO - [2022-08-08 17:35:43,663] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:35:44,592] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:35:44,608] {logging_mixin.py:115} INFO - [2022-08-08 17:35:44,608] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:35:44,625] {logging_mixin.py:115} INFO - [2022-08-08 17:35:44,625] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:35:44,632] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.981 seconds
+[2022-08-08 17:36:14,722] {processor.py:153} INFO - Started process (PID=380) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:36:14,731] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:36:14,731] {logging_mixin.py:115} INFO - [2022-08-08 17:36:14,731] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:36:15,640] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:36:15,658] {logging_mixin.py:115} INFO - [2022-08-08 17:36:15,657] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:36:15,675] {logging_mixin.py:115} INFO - [2022-08-08 17:36:15,674] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:36:15,682] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.962 seconds
+[2022-08-08 17:36:45,775] {processor.py:153} INFO - Started process (PID=409) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:36:45,777] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:36:45,778] {logging_mixin.py:115} INFO - [2022-08-08 17:36:45,778] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:36:46,781] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:36:46,798] {logging_mixin.py:115} INFO - [2022-08-08 17:36:46,798] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:36:46,814] {logging_mixin.py:115} INFO - [2022-08-08 17:36:46,814] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:36:46,821] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 1.048 seconds
+[2022-08-08 17:37:16,886] {processor.py:153} INFO - Started process (PID=429) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:37:16,894] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:37:16,894] {logging_mixin.py:115} INFO - [2022-08-08 17:37:16,894] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:37:17,780] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:37:17,796] {logging_mixin.py:115} INFO - [2022-08-08 17:37:17,796] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:37:17,813] {logging_mixin.py:115} INFO - [2022-08-08 17:37:17,813] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:37:17,820] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.937 seconds
+[2022-08-08 17:37:47,917] {processor.py:153} INFO - Started process (PID=458) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:37:47,917] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:37:47,918] {logging_mixin.py:115} INFO - [2022-08-08 17:37:47,918] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:37:48,834] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:37:48,851] {logging_mixin.py:115} INFO - [2022-08-08 17:37:48,851] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:37:48,868] {logging_mixin.py:115} INFO - [2022-08-08 17:37:48,868] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:37:48,875] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.962 seconds
+[2022-08-08 17:38:18,973] {processor.py:153} INFO - Started process (PID=488) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:38:18,981] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:38:18,981] {logging_mixin.py:115} INFO - [2022-08-08 17:38:18,981] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:38:19,886] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:38:19,905] {logging_mixin.py:115} INFO - [2022-08-08 17:38:19,904] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:38:19,924] {logging_mixin.py:115} INFO - [2022-08-08 17:38:19,924] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:38:19,933] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.963 seconds
+[2022-08-08 17:38:50,025] {processor.py:153} INFO - Started process (PID=517) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:38:50,033] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:38:50,034] {logging_mixin.py:115} INFO - [2022-08-08 17:38:50,033] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:38:50,975] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:38:50,992] {logging_mixin.py:115} INFO - [2022-08-08 17:38:50,992] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:38:51,009] {logging_mixin.py:115} INFO - [2022-08-08 17:38:51,008] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:38:51,016] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.994 seconds
+[2022-08-08 17:39:21,094] {processor.py:153} INFO - Started process (PID=537) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:39:21,102] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:39:21,103] {logging_mixin.py:115} INFO - [2022-08-08 17:39:21,103] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:39:22,006] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:39:22,023] {logging_mixin.py:115} INFO - [2022-08-08 17:39:22,022] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:39:22,039] {logging_mixin.py:115} INFO - [2022-08-08 17:39:22,039] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:39:22,047] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.955 seconds
+[2022-08-08 17:39:52,138] {processor.py:153} INFO - Started process (PID=566) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:39:52,146] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:39:52,146] {logging_mixin.py:115} INFO - [2022-08-08 17:39:52,146] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:39:53,064] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:39:53,080] {logging_mixin.py:115} INFO - [2022-08-08 17:39:53,080] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:39:53,096] {logging_mixin.py:115} INFO - [2022-08-08 17:39:53,096] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:39:53,103] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.968 seconds
+[2022-08-08 17:40:23,200] {processor.py:153} INFO - Started process (PID=595) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:40:23,200] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:40:23,201] {logging_mixin.py:115} INFO - [2022-08-08 17:40:23,201] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:40:24,119] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:40:24,137] {logging_mixin.py:115} INFO - [2022-08-08 17:40:24,137] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:40:24,153] {logging_mixin.py:115} INFO - [2022-08-08 17:40:24,153] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:40:24,160] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.963 seconds
+[2022-08-08 17:40:54,253] {processor.py:153} INFO - Started process (PID=624) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:40:54,261] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:40:54,261] {logging_mixin.py:115} INFO - [2022-08-08 17:40:54,261] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:40:55,188] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:40:55,204] {logging_mixin.py:115} INFO - [2022-08-08 17:40:55,204] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:40:55,221] {logging_mixin.py:115} INFO - [2022-08-08 17:40:55,220] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:40:55,228] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.978 seconds
+[2022-08-08 17:41:25,324] {processor.py:153} INFO - Started process (PID=644) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:41:25,325] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:41:25,325] {logging_mixin.py:115} INFO - [2022-08-08 17:41:25,325] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:41:26,280] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:41:26,298] {logging_mixin.py:115} INFO - [2022-08-08 17:41:26,298] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:41:26,315] {logging_mixin.py:115} INFO - [2022-08-08 17:41:26,314] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:41:26,323] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 1.002 seconds
+[2022-08-08 17:41:56,390] {processor.py:153} INFO - Started process (PID=673) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:41:56,391] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:41:56,391] {logging_mixin.py:115} INFO - [2022-08-08 17:41:56,391] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:41:57,295] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:41:57,311] {logging_mixin.py:115} INFO - [2022-08-08 17:41:57,310] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:41:57,329] {logging_mixin.py:115} INFO - [2022-08-08 17:41:57,328] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:41:57,335] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.947 seconds
+[2022-08-08 17:42:27,425] {processor.py:153} INFO - Started process (PID=702) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:42:27,425] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:42:27,425] {logging_mixin.py:115} INFO - [2022-08-08 17:42:27,425] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:42:28,281] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:42:28,298] {logging_mixin.py:115} INFO - [2022-08-08 17:42:28,298] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:42:28,315] {logging_mixin.py:115} INFO - [2022-08-08 17:42:28,315] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:42:28,322] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.900 seconds
+[2022-08-08 17:42:58,409] {processor.py:153} INFO - Started process (PID=731) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:42:58,418] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:42:58,418] {logging_mixin.py:115} INFO - [2022-08-08 17:42:58,418] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:42:59,347] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:42:59,364] {logging_mixin.py:115} INFO - [2022-08-08 17:42:59,364] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:42:59,382] {logging_mixin.py:115} INFO - [2022-08-08 17:42:59,382] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:42:59,389] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.983 seconds
+[2022-08-08 17:43:29,471] {processor.py:153} INFO - Started process (PID=751) to work on /opt/airflow/dags/pipeline.py
+[2022-08-08 17:43:29,479] {processor.py:641} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2022-08-08 17:43:29,479] {logging_mixin.py:115} INFO - [2022-08-08 17:43:29,479] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:43:30,388] {processor.py:651} INFO - DAG(s) dict_keys(['training_pipeline_dag']) retrieved from /opt/airflow/dags/pipeline.py
+[2022-08-08 17:43:30,405] {logging_mixin.py:115} INFO - [2022-08-08 17:43:30,404] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-08 17:43:30,422] {logging_mixin.py:115} INFO - [2022-08-08 17:43:30,422] {dag.py:2972} INFO - Setting next_dagrun for training_pipeline_dag to 2022-08-08T09:00:00+00:00, run_after=2022-08-15T09:00:00+00:00
+[2022-08-08 17:43:30,429] {processor.py:161} INFO - Processing /opt/airflow/dags/pipeline.py took 0.961 seconds
